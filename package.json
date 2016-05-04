@@ -1,0 +1,13 @@
+{
+	"name": "sliding-puzzle",
+	"version": "1.0.0",
+	"description": "An example of a sliding game created using AngularJS",
+	"author": "Yaniv Nagar",
+	"license": "MIT",
+	"dependencies": {
+		"angular":	"^1.5.0",
+		"angular-route":	"^1.5.5"
+	}
+}
+
+  

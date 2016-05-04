@@ -1,0 +1,14 @@
+<div ng-controller="HighscoreCtrl">
+	<table border="1">
+		<thead>
+			<tr>
+				<td>Name</td>
+				<td>Score</td>
+			</tr>
+		</thead>
+		<tbody score-list scores="scores"></tbody>
+	</table>
+	<p/>
+	<input type="button" ng-click="clear()" value="Clear scores"/>
+	<a href="#/game">Back to game</a>
+</div>

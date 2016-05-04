@@ -1,0 +1,6 @@
+<tbody ng-repeat="score in scores | orderBy:'score' | limitTo:10">
+	<tr>
+		<td> {{ score.name }} </td>
+		<td> {{ score.score }} </td>
+	</tr>
+</tbody>

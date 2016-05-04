@@ -1,0 +1,29 @@
+<div ng-controller="AppCtrl" ng-keydown="keyPress($event.keyCode)">
+	<div class="tile_row" ng-repeat="row in tiles" ng-style="getTileRowStyle()">
+		<div class="tile" ng-repeat="tile in row" ng-style="getTileStyle();" ng-class="getTileClass($index, $parent.$index)">
+		</div>
+	</div>
+	
+	<div>
+		Moves:
+		<input type="text" ng-model="score"/>
+	</div>
+	
+	<div>
+		Game Size:
+		<input type="text" ng-model="game_size"/>
+	</div>
+	<div>
+		Shuffle Amount:
+		<input type="text" ng-model="shuffle_iterations"/>
+	</div>
+	
+	
+	<input type="button" value="New Game" ng-click="create(tile_amount)"/>
+	
+	
+	{{ checkWin() }}
+	
+	<p/>
+	<a href="#/highscore">Show High Scores</a>
+</div>
