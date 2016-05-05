@@ -55,8 +55,7 @@ App.controller('AppCtrl', function AppCtrl($scope, highscore) {
 	$scope.getTileStyle = function() {
 		return {
 			width: $scope.tile_dimension + "px",
-			height: $scope.tile_dimension + "px",
-			float: "left"
+			height: $scope.tile_dimension + "px"
 		}
 	}
 	

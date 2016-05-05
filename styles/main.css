@@ -9,6 +9,7 @@ body {
 
 .tile {
 	background:url("../images/board.png") no-repeat;
+	float:left;
 }
 
 .tile-1 {
